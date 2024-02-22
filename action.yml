@@ -1,0 +1,28 @@
+name: 'Tag the repository with next tag'
+description: 'This retrieves the latest tag in the format ${env_slug}-${date}-N where N is increasing per day'
+inputs:
+  github_token:
+    description: 'The token from secrets GITHUB_TOKEN'
+    required: true
+  current-tag:
+    description: 'The current tag value to use'
+    required: true
+  region:
+    description: 'The region to use'
+    required: true
+  source-tag:
+    description: 'The source tag to use'
+    required: true
+  target-tag:
+    description: 'The target tag to use'
+    required: true
+  aws-access-key-id:
+    description: 'The AWS access key id'
+    required: true
+  aws-secret-access-key:
+    description: 'The AWS secret access key'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
