@@ -1,9 +1,6 @@
 name: 'Tag the repository with next tag'
 description: 'This retrieves the latest tag in the format ${env_slug}-${date}-N where N is increasing per day'
 inputs:
-  github_token:
-    description: 'The token from secrets GITHUB_TOKEN'
-    required: true
   current-tag:
     description: 'The current tag value to use'
     required: true
