@@ -4,6 +4,9 @@ inputs:
   current-tag:
     description: 'The current tag value to use'
     required: true
+  repositories:
+    description: 'The repositories to tag'
+    required: true
   region:
     description: 'The region to use'
     required: true
