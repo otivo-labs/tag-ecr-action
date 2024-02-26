@@ -82,7 +82,7 @@ const updateCurrentImage = async (ecrClient, repositoryName, sourceTag, currentT
             imageTag: currentTagValue,
         }));
 
-        console.log(`Updated current image in repository '${repositoryName}' from tag '${sourceTag}' to '${currentTagValue}'.`);
+        console.log(`Set current image '${currentTagValue}' for '${repositoryName}' on image with tag '${sourceTag}'.`);
     } catch (e) {
         console.error(`Error updating current image tag in repository '${repositoryName}': ${e}`);
         throw e;
